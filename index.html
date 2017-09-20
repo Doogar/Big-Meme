@@ -24,13 +24,42 @@
 				{ 
 					scarceSubCount = parseInt(data.items[0].statistics.subscriberCount); 
 					$("p").text((keemSubCount - scarceSubCount != 0 ? (keemSubCount > scarceSubCount ? "Keem" : "GayFlannelShirtGuy69") + " is ahead by " + Math.max(keemSubCount - scarceSubCount, scarceSubCount - keemSubCount) + " subscribers" + (keemSubCount < scarceSubCount ? "." : "!") : "Keem is tied with GayFlannelShirtGuy69! He's going to pass him!"));
+					if(scarceSubCount > keemSubCount)
+					{
+						$("p").css({color: '#4783e5'})
+					}
+					else
+					{
+						$("p").css({color: '#e23b3b'})
+					}
 				});
 			}
 			meme();
 			setInterval(meme, 500);
 		</script>
+		<style>
+			body
+			{
+				background: white url('/Big-Meme/Keem.jpg') no-repeat center -11vh;
+				background-size: 220vh;
+			}
+			p
+			{
+				font-size: 2vw;
+			}
+			div
+			{
+				background-color: #FFFFFF;
+			}
+		</style>
 	</head>
 	<body>
-		<p>Someone is ahead by an amount.</p>
+		<center>
+			<div>
+				<strong>
+					<p>Someone is ahead by an amount.</p>
+				</strong>
+			</div>
+		</center>
 	</body>
 </html>
